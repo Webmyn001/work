@@ -14,7 +14,7 @@ app.use(bp.json())
 app.use(bp.urlencoded({ extended: true }))
 
 app.use(cors());
-
+const PORT =4000
 app.use((req,res, next) => {
    console.log(req.path , req.body ,req.method , res.body)
    next()
